@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+}
+
+.container {
+    margin-top: 160px;
+
+    .wrapMenu {
+        width: 100%;
+        height: 160px;
+        background-color: #B2252D;
+        position: fixed;
+        top: 0;
+        z-index: 100;
+
+        .wrapLogo {
+            width: 100%;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .logo {
+                margin-top: 15px;
+                width: 150px;
+                height: 35px;
+            }
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .infor {
+                margin-right: 27px;
+                margin-top: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                i {
+                    font-size: 35px;
+                    color: #ffffff;
+                }
+
+                a:last-child {
+                    background-color: #ffffff;
+                    color: black;
+                    border: none;
+                    padding: 4px 10px;
+                }
+
+                a {
+                    color: #ffffff;
+                    text-decoration: none;
+                    margin-left: 25px;
+                    font-size: medium;
+                }
+
+            }
+
+            nav {
+                margin-top: 20px;
+                margin-left: 17px;
+                font-weight: 500;
+
+                .menulv {
+                    color: black;
+                }
+            }
+
+            nav ul {
+                display: flex;
+            }
+
+            nav>ul li {
+                list-style: none;
+            }
+
+            nav>ul li a {
+                display: block;
+                padding: 0 15px;
+                line-height: 50px;
+                color: #f1f2f3;
+                text-decoration: none;
+            }
+
+            nav>ul li a i {
+                margin-left: 10px;
+            }
+
+            nav ul li:hover>a {
+                background: #ffffff;
+                color: black;
+            }
+
+            nav li ul {
+                display: none;
+                min-width: 350px;
+                position: absolute;
+            }
+
+            nav li>ul li {
+                width: 100%;
+                border: none;
+                border-bottom: 1px solid #ccc;
+                background: #ffffff;
+                text-align: left;
+            }
+
+            nav li>ul li:first-child a {
+                border-bottom-left-radius: 0px;
+                border-top-left-radius: 0px;
+            }
+
+            nav li>ul li:last-child {
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+
+            nav li>ul li:last-child a {
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+
+            nav li:hover>ul {
+                display: block;
+            }
+
+            nav>ul li>ul li>ul {
+                margin-left: 352px;
+                margin-top: -50px;
+            }
+
+        }
+    }
+
+    .listProduct {
+        width: 100%;
+        height: auto;
+
+        .title {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 60px 0;
+
+            h1 {
+                font-size: 45px;
+                color: #B2252D;
+                font-weight: 700;
+                letter-spacing: 7px;
+            }
+
+        }
+
+        .productCart {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 160px;
+
+            // display: grid;
+            // gap:20px;
+            // grid-template-columns: 440px 440px 440px ;
+            .product1 {
+                width: 465px;
+                height: 580px;
+                background-color: white;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin: 30px 30px;
+                
+
+                img {
+                    margin-top: 30px;
+                    width: 395px;
+                    height: 395px;
+                }
+
+                p {
+                    font-family: Century Gothic;
+                    font-size: 19px;
+                    font-style: normal;
+                    font-weight: 600;
+                    color: #676767;
+                    line-height: 30px;
+                    letter-spacing: 2px;
+                    text-align: center;
+                    margin-top: 20px;
+                }
+
+                p:last-child {
+                    font-size: 30px;
+                    color: black;
+                    font-weight: 500
+                }
+            }
+            .product1:hover{
+                box-shadow: 1px 0px 20px 12px rgba(11, 28, 42, 0.25);
+                
+                
+            }
+        }
+
+    }
+
+    .footer {
+        width: 100%;
+        height: 551px;
+        padding: 70px 160px;
+
+        .wrapFooter {
+            display: flex;
+            align-items: start;
+            justify-content: space-evenly;
+            margin-bottom: 70px;
+
+            .contactUs {
+                a {
+                    font-size: 20px;
+                    margin-top: 10px;
+                    text-decoration: none;
+                    display: block;
+                }
+
+                a:hover {
+                    color: #B2252D;
+                }
+            }
+
+            .popular {
+                a {
+                    font-size: 20px;
+                    margin-top: 10px;
+                    text-decoration: none;
+                    display: block;
+                }
+
+                a:hover {
+                    color: #B2252D;
+                }
+            }
+
+            .information {
+                a {
+                    font-size: 20px;
+                    margin-top: 10px;
+                    text-decoration: none;
+                    display: block;
+                }
+
+                a:hover {
+                    color: #B2252D;
+                }
+            }
+
+            .connectUs {
+                img {
+                    margin-top: 20px;
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+
+            .logo {
+                img {
+                    margin-top: 20px;
+                    width: 210px;
+                    height: 190px;
+                }
+            }
+        }
+
+        .wallet {
+            img {
+                width: 157px;
+                height: 30;
+                float: right;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+
+        }
+    }
+}
